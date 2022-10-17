@@ -1,0 +1,155 @@
+<!--Name: Alexis
+Course: Software Development 20s
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: 10/13/2022-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--The header contains the title of the webpage and the link to the other page on my website-->
+    <header>
+      <h1>My Movie Website</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="recommendations.html">My Recommendations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        This website is about movies because I love movies but I hate most
+        movies. It has my recommendations which is a small list. Lets be real
+        here, nicholas cages career is dead and thats why all of his movies are
+        in the five dollar bin at walmart. Dune did not deserve six oscars and
+        Jessica Chastain did not deserve best actress (if your asking who that
+        is. Exactly).
+      </p>
+
+      <img
+        src="images/ballistic.jfif"
+        width="303"
+        height="450"
+        alt="A poster for the movie Ballistic starring Antonio Banderas and Lucy Liu." />
+
+      <p>
+        You may be wondering why this movie is here. I know I said Nicholas
+        Cages career is dead, but then Antonio Banderas exists.
+      </p>
+
+      <h1>Movie Form</h1>
+      <!-- The form tag is where you put all of the tags included in the form.
+        The required attributes are name, id, and method.
+        name gives information about what the form is used for.
+        id is used to reference the form later.
+        method has two values which are get and post. 
+        Get is used for forms that do not ask for personal information.
+        Post is used for forms that do ask for personal information.-->
+      <form name="movie-suggestions" id="movie" method="get">
+        <!-- labels are used to link them to an input,
+          and to add text to explain what the input is for.-->
+        <label for="movie-name">
+          Please Enter a Movie You Suggest I Watch [required]:
+        </label>
+        <!--The text input allows the user to type any character into the text box.
+        type="text", name, and id are all required attributes.
+        The required attribute is used to guarantee that a user has to fill out that field
+        before submitting the form.-->
+        <input type="text" name="film" id="movie-name" required />
+
+        <br />
+        <br />
+        <!-- The checkbox input is used 
+         type="checkbox", name, value and id are all required attributes.
+        The value attribute is used provides its value to the server
+        if the box is checked when the form is submitted. -->
+        <input type="checkbox" name="opinions" id="opinion" value="agree" />
+        <label for="opinion">
+          check this box if you agree with my opinions
+        </label>
+
+        <br />
+        <br />
+        <!-- A radio button is used when you want a user to select one option from a list of options.
+        name, id, and value are all required attributes.
+        The name attribute for each radio button should be the same.
+        The label should shows up after the input like with the checkbox..-->
+        <p>Which Lord of the Rings Is The Best (if it's not one your wrong)</p>
+        <input type="radio" name="lotrOpinions" id="one" />
+        <label for="one">one</label>
+
+        <input type="radio" name="lotrOpinions" id="two" />
+        <label for="two">two</label>
+
+        <input type="radio" name="lotrOpinions" id="three" />
+        <label for="three">three</label>
+        <br />
+        <br />
+
+        <!-- A select input is a dropdown input.
+          name and id are the required attributes.
+          The option tag is the actual option that a user can select. 
+          The value attribute is required for when the selection gets sent to
+          the server.-->
+        <label for="numbers">Which Scream is the Best</label>
+        <select name="screamNumbers" id="numbers">
+          <option value="one">one</option>
+          <option value="two">two</option>
+          <option value="three">three</option>
+          <option value="four">four</option>
+          <option value="five">five</option>
+        </select>
+
+        <br />
+        <br />
+
+        <!-- The range input is used when a specific number is not important.
+        It is usually in the form of a slider control.
+        type="range", id, name are required fields.
+        min, and max are recommended fields." -->
+        <label for="rate">
+          On a scale from terrible to amazing how would you rate the acting in
+          The Stand:
+        </label>
+        <input type="range" id="rate" name="rate" min="0" max="10" />
+
+        <br />
+        <br />
+
+        <!-- The submit input is used to create a submit button for the form.
+        type="submit", name and id are required attributes. -->
+        <label for="submit">submit</label>
+        <input type="submit" name="formSubmit" id="submit" />
+
+        <br />
+        <br />
+
+        <!-- The reset input is used to create a reset button for the form 
+        and clears all input that the user has added.
+        type="reset", name and id are required attributes. -->
+        <label for="reset">reset</label>
+        <input type="reset" name="formReset" id="reset" />
+      </form>
+    </main>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <p>&#169; 2022 Alexis Block</p>
+    </footer>
+  </body>
+</html>
